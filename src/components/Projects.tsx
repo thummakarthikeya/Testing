@@ -14,6 +14,7 @@ interface Project {
   name: string
   description: string
   tags: Tag[]
+  link?: string
 }
 
 const ProjectCard = ({ index, project }: { index: number; project: Project }) => (
@@ -37,6 +38,19 @@ const ProjectCard = ({ index, project }: { index: number; project: Project }) =>
             #{tag.name}
           </p>
         ))}
+
+    {project.link && (
+        <div className="mt-4">
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-4 py-2 bg-[#12053c] text-white rounded-lg hover:bg-blue-900 transition"
+          >
+            Navigate to Project
+          </a>
+        </div>
+      )}
       </div>
     </div>
   </motion.div>
@@ -69,6 +83,7 @@ const Projects = () => {
             index={index}
             project={project}
           />
+          
         ))}
       </div>
     </>

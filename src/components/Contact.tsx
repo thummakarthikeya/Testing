@@ -49,7 +49,7 @@ const Contact = () => {
               <i className="fab fa-linkedin text-white"></i>
             </div>
             <a
-              href="https://linkedin.com/in/karthikeya-thumma"
+              href="https://www.linkedin.com/in/karthikeya-thumma-3b76b127b/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white font-medium text-[16px] hover:text-secondary"

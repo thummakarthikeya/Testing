@@ -1,12 +1,14 @@
 {
+  "homepage": "https://github.com/thummakarthikeya/Testing",
   "name": "karthikeya-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
@@ -26,6 +28,7 @@
     "@types/react-scroll": "^1.8.10",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.17",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.33",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
